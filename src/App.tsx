@@ -170,13 +170,17 @@ function ImageCarousel({ images, label }: { images: string[]; label: string }) {
 }
 
 function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const handleNavClick = () => setMobileMenuOpen(false)
+
   return (
     <div className="site">
       <header className="utility-bar">
         <div className="container utility-row">
-          <a href="tel:+18134934640">813-493-4640</a>
+          <a href="tel:+18134934640">Call: 813-493-4640</a>
           <a href="mailto:info@sfug.pro">info@sfug.pro</a>
-          <p>15805 Knollview Dr, Tampa FL 33624</p>
+          <p className="utility-address">Tampa, FL</p>
         </div>
       </header>
 
@@ -185,13 +189,35 @@ function App() {
           <a className="brand" href="#home">
             <img className="brand-logo" src={logoUrl} alt="San Francisco Upholstery Group" width={200} height={48} />
           </a>
-          <nav className="main-nav" aria-label="Primary">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#fireproofing">Fireproofing</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
+          <button
+            type="button"
+            className="mobile-menu-btn"
+            onClick={() => setMobileMenuOpen((open) => !open)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="main-nav"
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+          <nav id="main-nav" className={mobileMenuOpen ? 'main-nav is-open' : 'main-nav'} aria-label="Primary">
+            <a href="#home" onClick={handleNavClick}>
+              Home
+            </a>
+            <a href="#services" onClick={handleNavClick}>
+              Services
+            </a>
+            <a href="#about" onClick={handleNavClick}>
+              About
+            </a>
+            <a href="#fireproofing" onClick={handleNavClick}>
+              Fireproofing
+            </a>
+            <a href="#faq" onClick={handleNavClick}>
+              FAQ
+            </a>
+            <a href="#contact" onClick={handleNavClick}>
+              Contact
+            </a>
           </nav>
           <a className="btn btn-primary nav-cta" href="#contact">
             Contact Us

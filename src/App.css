@@ -55,6 +55,10 @@ section[id] {
   opacity: 0.9;
 }
 
+.utility-address {
+  margin-left: auto !important;
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--sfug-green-primary);
@@ -100,6 +104,19 @@ button:focus-visible {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.mobile-menu-btn {
+  display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--sfug-border);
+  background: #fff;
+  color: var(--sfug-green-deep);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .main-nav a {
@@ -673,8 +690,23 @@ h3 {
 }
 
 @media (max-width: 860px) {
+  .utility-row {
+    min-height: auto;
+    padding-block: 0.5rem;
+    gap: 0.35rem 0.9rem;
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+
+  .utility-address {
+    width: 100%;
+    text-align: center;
+    margin-left: 0 !important;
+    opacity: 0.75;
+  }
+
   .topbar {
-    top: 0;
+    top: 56px;
   }
 
   .split {
@@ -715,6 +747,46 @@ h3 {
 
   .hero-float-card h2 {
     font-size: 1.25rem;
+  }
+
+  .nav-row {
+    min-height: 66px;
+    position: relative;
+  }
+
+  .mobile-menu-btn {
+    display: inline-grid;
+    place-items: center;
+    margin-left: auto;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid var(--sfug-border);
+    border-radius: 0.8rem;
+    box-shadow: var(--sfug-shadow-soft);
+    padding: 0.6rem;
+    gap: 0.2rem;
+    z-index: 60;
+  }
+
+  .main-nav a {
+    padding: 0.65rem 0.7rem;
+    border-radius: 0.55rem;
+  }
+
+  .main-nav a:hover {
+    background: var(--sfug-green-soft);
+  }
+
+  .main-nav.is-open {
+    display: flex;
   }
 
   .target-grid {
