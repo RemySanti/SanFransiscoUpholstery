@@ -180,7 +180,6 @@ function App() {
         <div className="container utility-row">
           <a href="tel:+18134934640">Call: 813-493-4640</a>
           <a href="mailto:info@sfug.pro">info@sfug.pro</a>
-          <p className="utility-address">Tampa, FL</p>
         </div>
       </header>
 
@@ -341,7 +340,7 @@ function App() {
               <ul className="about-trust">
                 <li>Family owned &amp; fully insured</li>
                 <li>25+ years in reupholstery, refinishing &amp; redesign</li>
-                <li>Tampa Bay, Florida &amp; Georgia</li>
+                <li>Tampa Bay based, serving clients nationwide</li>
               </ul>
             </div>
             <div className="about-copy">
@@ -413,9 +412,9 @@ function App() {
               <article>
                 <h3>What areas do you service, do you offer pickup and delivery, and how does payment work?</h3>
                 <p>
-                  We service Florida and Georgia, with Tampa-area pickup and delivery available locally at no extra
-                  charge. For payment, we accept cash, check, Visa, MasterCard, and Discover, with half down and the
-                  remaining balance due upon installation for cash or check orders.
+                  We serve clients nationwide, with Tampa-area pickup and delivery available locally at no extra charge.
+                  For payment, we accept cash, check, Visa, MasterCard, and Discover, with half down and the remaining
+                  balance due upon installation for cash or check orders.
                 </p>
               </article>
             </div>
@@ -424,7 +423,7 @@ function App() {
 
         <section id="contact" className="section section-accent">
           <div className="container contact-block">
-            <h2>Get a Tampa upholstery quote today</h2>
+            <h2>Get Upholstery Quote Today</h2>
             <p>
               Tell us your industry, quantity, timeline, and if fireproofing is required. We will recommend the most
               practical path for budget, durability, and compliance.
@@ -433,7 +432,6 @@ function App() {
               <a href="tel:+18134934640">813-493-4640</a>
               <a href="mailto:info@sfug.pro">info@sfug.pro</a>
             </div>
-            <p className="address">15805 Knollview Dr, Tampa FL 33624</p>
           </div>
         </section>
       </main>

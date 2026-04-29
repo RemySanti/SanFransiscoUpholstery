@@ -93,9 +93,9 @@ button:focus-visible {
 }
 
 .brand-logo {
-  height: 44px;
+  height: 57px;
   width: auto;
-  max-width: min(220px, 42vw);
+  max-width: min(286px, 54vw);
   object-fit: contain;
   display: block;
 }
