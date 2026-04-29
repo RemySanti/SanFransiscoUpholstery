@@ -202,11 +202,14 @@ function App() {
       <main>
         <section className="hero-section">
           <div className="container hero-shell">
-            <img
-              className="hero-bg"
-              src="/hero-green-sofa.png"
-              alt="Modern green commercial seating lounge"
-            />
+            <picture>
+              <source media="(max-width: 860px)" srcSet="/hero-mobile.png" />
+              <img
+                className="hero-bg"
+                src="/hero-green-sofa.png"
+                alt="Commercial upholstered seating"
+              />
+            </picture>
             <div className="hero-overlay">
               <p className="eyebrow">Established 1994 • Tampa, FL</p>
               <h1>Commercial Upholstery That Elevates High-Traffic Spaces</h1>
