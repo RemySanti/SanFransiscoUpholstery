@@ -1,0 +1,59 @@
+/**
+ * Dark Systems · Glass Editorial
+ * Maps to legacy `--color-*` / `--rgb-*` names used across App.css.
+ */
+:root {
+  --black: #0a0a09;
+  --near-black: #111110;
+  --dark: #161614;
+
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-hover: rgba(255, 255, 255, 0.07);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --sage: #8a9e7e;
+  --sage-light: #a8be9a;
+  --sage-muted: rgba(138, 158, 126, 0.15);
+
+  --text-primary: #ede8df;
+  --text-muted: rgba(237, 232, 223, 0.45);
+  --text-dim: rgba(237, 232, 223, 0.25);
+
+  --cream: #f5f0e8;
+  --bone: #e8e0d0;
+
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --shadow-glass: 0 20px 60px rgba(0, 0, 0, 0.4);
+  --radius-editorial: 20px;
+
+  /* Legacy bridge (existing components) */
+  --ink: var(--black);
+  --color-primary: var(--text-primary);
+  --color-cream: var(--cream);
+  --color-sage: var(--sage);
+  --rgb-primary: 237, 232, 223;
+  --rgb-cream: 245, 240, 232;
+  --rgb-sage: 138, 158, 126;
+  --rgb-black: 10, 10, 9;
+
+  --color-text-muted: var(--text-muted);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-glass-border: var(--glass-border);
+  --color-glass-border-muted: rgba(255, 255, 255, 0.06);
+  --color-surface-warm: var(--glass);
+  --color-surface-muted: rgba(255, 255, 255, 0.03);
+  --color-primary-hover: var(--sage-light);
+  --color-bg-dark: var(--dark);
+  --color-bg-dark-deeper: var(--black);
+  --color-wood-tone: color-mix(in srgb, var(--black) 72%, var(--sage) 28%);
+  --color-sage-deep: color-mix(in srgb, var(--sage) 52%, var(--black) 48%);
+
+  /* Bento rhythm */
+  --bento-gap: clamp(14px, 2.4vw, 22px);
+  --bento-radius: var(--radius-editorial);
+  --bento-radius-sm: 12px;
+  --bento-section-y: clamp(2.75rem, 6vw, 4.5rem);
+  --bento-pad-inline: clamp(1rem, 4vw, 3rem);
+}
